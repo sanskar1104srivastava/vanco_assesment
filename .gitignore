@@ -1,0 +1,75 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Local environment and secrets
+.env
+.env.*
+*.local
+
+# Logs and temporary files
+*.log
+logs/
+tmp/
+temp/
+.tmp/
+*.tmp
+
+# Tool caches and training run outputs
+.ultralytics/
+runs/
+wandb/
+mlruns/
+
+# Archives and extracted backup bundles
+*.zip
+UC2_ASL_detection/dataset.zip
+UC2_ASL_detection/dataset/train/
+UC2_ASL_detection/dataset/test/
+
+# Root duplicate of the ASL training notebook
+/vanco-uc2.ipynb
+
+# Old local folders kept outside submission
+Hybrid_RAG/
+store_forecasting/
+UC1_submission/
+ASL/
+
+# Hybrid RAG generated indexes and local runtime state
+UC3_hybrid_RAG/venv/
+UC3_hybrid_RAG/chroma_db/
+UC3_hybrid_RAG/tmp/
+UC3_hybrid_RAG/logs/
+UC3_hybrid_RAG/data/bm25_index.pkl
+UC3_hybrid_RAG/data/chunks.json
+UC3_hybrid_RAG/submission/
+UC3_hybrid_RAG/structure.txt
+UC3_hybrid_RAG/task.txt
+
+# UC1 local duplicates already represented by root diagrams or final screenshot
+UC1_store_forecasting/best_model.pkl
+UC1_store_forecasting/forecasting_architecture.png
+UC1_store_forecasting/forecasting_pipeline.png
+UC1_store_forecasting/screenshots/Store Sales - Time Series Forecasting _ Kaggle - Google Chrome 10-06-2026 18_05_43.png

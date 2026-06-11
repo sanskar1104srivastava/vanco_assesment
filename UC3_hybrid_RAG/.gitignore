@@ -1,0 +1,12 @@
+.env
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+chroma_db/
+data/chunks.json
+data/bm25_index.pkl
+logs/*.log
+logs/evaluation_*.json
+tmp/

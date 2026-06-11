@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" modified="2026-06-09T00:00:00.000Z" agent="manual" version="24.7.17">
+  <diagram id="hybrid-rag-architecture" name="Architecture">
+    <mxGraphModel dx="850" dy="1100" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="pdf" value="Physics PDF" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="315" y="60" width="220" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="chunking" value="Chunking" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="315" y="190" width="220" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="stores" value="Chroma | BM25 | Neo4j" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="265" y="320" width="320" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="hybrid" value="Hybrid Retrieval" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="265" y="450" width="320" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="qwen" value="Qwen3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="315" y="580" width="220" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="answer" value="Answer +&#xa;Citations" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="315" y="710" width="220" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;" edge="1" parent="1" source="pdf" target="chunking">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;" edge="1" parent="1" source="chunking" target="stores">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;" edge="1" parent="1" source="stores" target="hybrid">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;" edge="1" parent="1" source="hybrid" target="qwen">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;" edge="1" parent="1" source="qwen" target="answer">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

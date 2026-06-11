@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../test/images
+test: ../test/images
+
+nc: 10
+names: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
+
+roboflow:
+  workspace: sanskar-p1anc
+  project: my-first-project-hvrly
+  version: dataset
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/sanskar-p1anc/my-first-project-hvrly/dataset/dataset
